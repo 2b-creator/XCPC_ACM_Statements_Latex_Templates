@@ -6,6 +6,7 @@
 \usepackage{boxedminipage}
 \usepackage{makecell}
 \usepackage{xcolor}
+\usepackage{tabularx}
 \geometry{a4paper,scale=0.8}
 \usetikzlibrary{patterns}
 \schoolshort{JSUT}
@@ -61,15 +62,15 @@
 		\end{outputdes}
 		
 		\section*{样例}
-		
+
 		\begin{table}[h]
-			\begin{tabular}{|l|l|}
+			\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
 				\hline
 				\textbf{输入} & \textbf{输出} \\ \hline
 				\makecell[l]{$\tt{F}$} & \makecell[l]{$\tt{true}$} \\ \hline
 				\makecell[l]{$\tt{W}$} & \makecell[l]{$\tt{false}$} \\ \hline
 				\makecell[l]{$\tt{J}$} & \makecell[l]{$\tt{true}$} \\ \hline
-			\end{tabular}
+			\end{tabularx}
 		\end{table}
 		
 		\section*{注释}
@@ -86,7 +87,7 @@
 		
 		Timothy 是网络与xcpc社团的老登，他在 QQ 群里说话很奇怪，总是在一句话后面加一个括号 (。
 		
-		和上面一样。而且论文里说，如果 Timothy 说话时结尾的括号成对，通常是：
+		和上面一样。而且老登 Papers 说，如果 Timothy 说话时结尾的括号成对，通常是：
 		\begin{enumerate}
 			\item 左括号必须由相同类型的右括号封闭；
 			\item 左括号必须按照正确的顺序闭合；
@@ -106,15 +107,15 @@
 		\end{outputdes}
 		
 		\section*{样例}
-		
+
 		\begin{table}[h]
-			\begin{tabular}{|l|l|}
+			\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
 				\hline
 				\textbf{输入} & \textbf{输出} \\ \hline
 				\makecell[l]{$\tt{()}$} & \makecell[l]{$\tt{true}$} \\ \hline
 				\makecell[l]{$\tt{(]}$} & \makecell[l]{$\tt{false}$} \\ \hline
 				\makecell[l]{$\tt{([])}$} & \makecell[l]{$\tt{true}$} \\ \hline
-			\end{tabular}
+			\end{tabularx}
 		\end{table}
 		
 	\end{problem}
@@ -141,12 +142,12 @@
 		\section*{样例}
 		
 		\begin{table}[h]
-			\begin{tabular}{|l|l|}
+			\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
 				\hline
 				\textbf{输入} & \textbf{输出} \\ \hline
-				\makecell[l]{$\tt{12}$\\$\tt{0\ 1\ 0\ 2\ 1\ 0\ 1\ 3\ 2\ 1\ 2\ 1}$} & \makecell[l]{$\tt{6}$} \\ \hline
-				\makecell[l]{$\tt{6}$\\$\tt{4\ 2\ 0\ 3\ 2\ 5}$} & \makecell[l]{$\tt{9}$} \\ \hline
-			\end{tabular}
+				\makecell[l]{\tt{12} \\ \tt{0 1 0 2 1 0 1 3 2 1 2 1}} & \tt{6} \\ \hline
+				\makecell[l]{\tt{6} \\ \tt{4 2 0 3 2 5}} & \tt{9} \\ \hline
+			\end{tabularx}
 		\end{table}
 		
 		\section*{注释}
@@ -213,14 +214,13 @@
 		\section*{样例}
 		
 		\begin{table}[h]
-			\begin{tabular}{|l|l|}
+			\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
 				\hline
 				\textbf{输入} & \textbf{输出} \\ \hline
-				\makecell[l]{$\tt{4\ 4}$\\$\tt{0\ 2\ 1\ 0}$\\$\tt{4\ 0\ 0\ 4}$\\$\tt{1\ 0\ 0\ 4}$\\$\tt{0\ 3\ 2\ 0}$} & \makecell[l]{$\tt{7}$} \\ \hline
-				\makecell[l]{$\tt{1 3}$\\$\tt{1\ 3\ 9}$} & \makecell[l]{$\tt{13}$} \\ \hline
-			\end{tabular}
+				\makecell[l]{$\tt{4\ 4}$\\$\tt{0\ 2\ 1\ 0}$\\$\tt{4\ 0\ 0\ 3}$\\$\tt{1\ 0\ 0\ 4}$\\$\tt{0\ 3\ 2\ 0}$} & \makecell[l]{$\tt{7}$} \\ \hline
+				\makecell[l]{$\tt{1\ 3}$\\$\tt{1\ 3\ 9}$} & \makecell[l]{$\tt{13}$} \\ \hline
+			\end{tabularx}
 		\end{table}
-		
 		\section*{注释}
 		
 		对于第一个样例，Timothy可以从方格 (1,3) 开始，捕获 3 条鱼，然后移动到方格 (2,3) 并捕获 4 条鱼。
