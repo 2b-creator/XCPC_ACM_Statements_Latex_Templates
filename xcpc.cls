@@ -52,7 +52,7 @@
 
 \fancyhead[C]{\schoolshort Collegiate Programming Contest\\\schoolname\location, \today}
 \fancyhead[R]{%
-	\protect\includegraphics[width=2.5cm]{\logo}
+	\protect\includegraphics[width=2cm]{\logo}
 }
 
 \newcommand{\icpclogo}[1]{\begin{tikzpicture}[y=1cm, x=1cm, yscale=#1,xscale=#1, every node/.append style={scale=#1}, inner sep=0pt, outer sep=0pt]
